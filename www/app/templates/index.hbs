@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-5">
         <h1 style="font-size: 24px">
-          <strong>Open Ethereum Pool</strong>
+          <strong>Open <a href="http://cheapeth.org/">cheapETH</a> Pool</strong>
         </h1>
         <strong>Min. payout threshold: {{config.PayoutThreshold}}</strong>, Payouts run twice per day.<br/>
         <span class="label label-success">PROP</span> Stable and profitable pool with regular payouts.
@@ -40,8 +40,13 @@
   </div>
   <div>
     <hr/>
+    <h3><b>AMD</b></h3>
     <h4 class="note note-info text-center">
-      ethminer.exe -F {{config.HttpHost}}:{{config.HttpPort}}/&lt;address&gt;/&lt;worker&gt; -G
+      ethminer.exe -G -P stratum://&lt;address&gt;.&lt;worker&gt;@{{config.AppHost}}
+    </h4>
+    <h3><b>NVIDIA</b></h3>
+    <h4 class="note note-info text-center">
+      ethminer.exe -U -P stratum://&lt;address&gt;.&lt;worker&gt;@{{config.AppHost}}
     </h4>
   </div>
 </div>
