@@ -15,7 +15,7 @@ module.exports = function(environment) {
 
     APP: {
       // API host and port
-      ApiUrl: 'http://cethpool.xyz/',
+      ApiUrl: 'https://cethpool.xyz/',
 
       // APP host
       AppHost: 'cethpool.xyz:8008',
