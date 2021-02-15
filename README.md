@@ -37,7 +37,7 @@ First install  [go-ethereum](https://github.com/ethereum/go-ethereum/wiki/Instal
 Clone & compile:
 
     git config --global http.https://gopkg.in.followRedirects true
-    git clone https://github.com/yanuararistya/open-ethereum-pool.git -b cheapeth
+    git clone https://github.com/smtheard/open-ethereum-pool.git -b cheapeth
     cd open-ethereum-pool
     make
 
